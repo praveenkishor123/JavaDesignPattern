@@ -1,0 +1,16 @@
+Proxy Design Pattern
+=========================
+
+What is a Proxy ?
+-----------------
+A proxy is something that is authorized to do some work on behalf of an original object.
+
+
+Example
+--------
+Suppose, we are busy with our daily life and forget to pay our bills.
+So, we can approach to an organization that can pay bills on our behalf and charge us for providing 
+this service.
+
+
+
