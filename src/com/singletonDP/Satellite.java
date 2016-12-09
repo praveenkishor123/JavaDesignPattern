@@ -21,12 +21,25 @@ public class Satellite {
 	// will have to always obtain the lock from the Satellite class.
 	
 	// Until one thread releases the lock, other threads have to wait.
-	public static synchronized Satellite getSatellite() {
-		if(_instance == null) {
-			_instance = new Satellite();
-		}
-		
-		return _instance;
+//	public static synchronized Satellite getSatellite() {
+//		if(_instance == null) {
+//			_instance = new Satellite();
+//		}
+//		
+//		return _instance;
+//	}
+	
+	// To reduce the overhead of the synchronized keyword, we will use an inner class here.
+	
+	// Here, we are not using the lazy initailization as used previously.
+	// We are creating an object and keeping it ready for use.
+	
+	private static class SatelliteHelper {
+		private static final Satellite _innerInstance = new Satellite();
+	}
+	
+	public static Satellite getSatellite() {
+		return SatelliteHelper._innerInstance;
 	}
 
 }
