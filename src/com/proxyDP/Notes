@@ -24,8 +24,10 @@ Common applications
 1. Pre processing - loggin, filtering, etc.
 2. Post processing - filter, locking, etc.
 3. Overriding functionality - used for some legacy codes.
-4. Caching mechanism in some resource intensive applications to cache some frequently accessed data. This helps to reduce the traffic on the network.
-5. Security mechanisms - Spring AOP framework. The proxies in this framework is used to apply some functionality before and after invoking some methods.
+4. Caching mechanism in some resource intensive applications to cache some frequently accessed data. This helps to reduce the traffic 
+   on the network.
+5. Security mechanisms - Spring AOP framework. The proxies in this framework is used to apply some functionality before and after 
+   invoking some methods.
 
 
 
@@ -38,10 +40,5 @@ Interfaces(to provide loose coupling and to provide strong contract among the mo
 --------------------------------------------------------------------------------------------------------------------
 1. <<interface>> ISP  --->   Vodafone and InternetProxy class will implement this interface.
 
-
 Finally, there is a Browser object that will send the request.
-
-
-
-
 
