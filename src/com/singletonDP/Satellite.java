@@ -9,7 +9,14 @@ public class Satellite {
 	
 	
 	// Now we need to give a way to create the instances
-	public static Satellite getSatellite() {
+	
+	// Making the code ready for working in multithreaded environment
+	// by adding synchronized.
+	
+	// Here, by using synchronized keyword, we are also decreasing the
+	// performance of our application, as there is always some locking mechanism
+	// associate with synchronized.
+	public static synchronized Satellite getSatellite() {
 		if(_instance == null) {
 			_instance = new Satellite();
 		}
