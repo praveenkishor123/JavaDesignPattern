@@ -16,6 +16,11 @@ public class Satellite {
 	// Here, by using synchronized keyword, we are also decreasing the
 	// performance of our application, as there is always some locking mechanism
 	// associate with synchronized.
+	
+	// Whenever a thread is accessing getSatellite() method, the accessing thread
+	// will have to always obtain the lock from the Satellite class.
+	
+	// Until one thread releases the lock, other threads have to wait.
 	public static synchronized Satellite getSatellite() {
 		if(_instance == null) {
 			_instance = new Satellite();
