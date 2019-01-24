@@ -1,9 +1,10 @@
-# Java-Design-Pattern
-Design patterns implementation using Java
+# Java Design Patterns
 
-1. Singleton Design Pattern
+### Design patterns implementation using Java
 
-2. Observer Design Pattern
+1. Singleton Design Pattern - https://github.com/praveenkishor123/JavaDesignPattern/tree/master/src/com/singletonDP
 
-3. Proxy Design Pattern
+2. Observer Design Pattern - https://github.com/praveenkishor123/JavaDesignPattern/tree/master/src/com/observerDP
+
+3. Proxy Design Pattern - https://github.com/praveenkishor123/JavaDesignPattern/tree/master/src/com/proxyDP
 
